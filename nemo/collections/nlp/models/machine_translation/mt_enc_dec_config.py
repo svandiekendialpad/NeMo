@@ -111,8 +111,8 @@ class MTEncDecModelConfig(EncDecNLPModelConfig):
 class AAYNBaseConfig(MTEncDecModelConfig):
 
     # Attention is All You Need Base Configuration
-    encoder_tokenizer: TokenizerConfig = TokenizerConfig(library='yttm')
-    decoder_tokenizer: TokenizerConfig = TokenizerConfig(library='yttm')
+    encoder_tokenizer: TokenizerConfig = TokenizerConfig(library='sentencepiece')
+    decoder_tokenizer: TokenizerConfig = TokenizerConfig(library='sentencepiece')
 
     encoder: NeMoTransformerEncoderConfig = NeMoTransformerEncoderConfig(
         library='nemo',
