@@ -59,4 +59,4 @@ markers = [
 ]
 
 [build-system]
-requires = ["cython>=0.29.34"]
+requires = ["setuptools>=32.0.0", "cython>=0.29.34"]
